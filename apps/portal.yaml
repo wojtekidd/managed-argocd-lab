@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<github-username>/managed-argocd-lab' # Update to match your fork.
+    repoURL: 'https://github.com/wojtekidd/managed-argocd-lab'
     path: portal
     targetRevision: HEAD
   destination:
     namespace: portal
-    name: <environment-name> # Update this value.
+    name: laptop
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
